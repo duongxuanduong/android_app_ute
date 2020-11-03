@@ -47,9 +47,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public class MyViewHolder extends RecyclerView.ViewHolder{
         TextView tv_store_name;
         ImageView img_store_thumbnail;
+        TextView tv_store_address;
         public MyViewHolder(View itemView) {
             super(itemView);
             tv_store_name = (TextView) itemView.findViewById(R.id.store_name);
+            tv_store_address = (TextView)  itemView.findViewById(R.id.description);
             img_store_thumbnail = (ImageView) itemView.findViewById(R.id.store_img);
         }
     }
